@@ -20,6 +20,7 @@ function App() {
                 setFeatPupId(puppy.id);
               }}
               key={puppy.id}
+              className="puppy"
             >
               {puppy.name}
             </p>
@@ -27,7 +28,7 @@ function App() {
         })}
         <div>
           {featPupId && (
-            <div>
+            <div className="puppy-details">
               <h2>{featuredPup.name}</h2>
               <ul>
                 <li>Age: {featuredPup.age}</li>
